@@ -1,0 +1,75 @@
+git init
+ls -a
+git config --global user.name "Polarapu Prasad"
+git config --global user.email "devopstraining2015@gmail.com"
+git config --list
+
+-----------------------------
+touch file1
+ls
+git status
+git add file1
+git status 
+git commit -m "label" file1
+git status
+git log
+git show cid
+
+--------------------
+touch file3 file4 file5
+ls
+git status
+git add file3 file4 file5
+or
+git add .
+or
+git add *
+or
+git add -A
+git status
+git commit -m "label"
+git log
+
+
+-------------------
+git reset head file-name  ( staging to workspace)
+git reset --soft cid  (local to staging)
+(cid = n-1)
+git reset --mixed cid  (local to workspace)
+
+git reset --hard cid (delete)
+-------------------------------------------
+
+Task-1
+=======
+
+create a repo
+git clone repo-url
+ls
+cd repo-name
+touch name
+git add .
+git commit -m "sample commit"
+git push
+
+git-hub url
+
+
+Task-2
+=======
+
+mkdir name-dir
+cd name-dir
+touch f1 f2 f3
+cd ..
+git add *
+git commit -m "sample commit"
+git push
+
+delete a file
+==============
+rm -rf file-name
+git add .
+git commit -m "label"
+git push
+
